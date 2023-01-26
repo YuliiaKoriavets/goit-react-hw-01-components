@@ -11,7 +11,7 @@ export const Section = styled.section`
   align-items: center;
   background-color: #f1f3f4;
 `;
-export const Title = styled.h2`
+export const TitleStatistics = styled.h2`
   margin-top: 40px;
   margin-bottom: 40px;
   display: inline-block;

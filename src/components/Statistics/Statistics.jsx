@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { Section, Title, List, Item, Percentage } from './Statistics.styled';
+import { Section, TitleStatistics, List, Item, Percentage } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (
     <Section>
-      <Title>{title}</Title>
+       {title && <TitleStatistics>{title}</TitleStatistics>}
 
       <List>
         {stats.map(element => (
@@ -19,7 +19,7 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
